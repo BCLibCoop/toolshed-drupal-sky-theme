@@ -1,0 +1,271 @@
+ /* =====================================================================
+
+	Copyright:  Hybrid Forge 2013. All Rights Reserved.
+	Authors: 	Khean Murphy (www.hybridforge.com)
+	Date: 		April 2013
+	
+	Info: 		CSS changes and alterations for APLEN Training Centre
+
+	"In the beginner's mind there are many possibilities, 
+		but in the expert's there are few." - Shunryu Suzuki-Roshi
+
+	===================================================================== */
+
+/* === Main Menu Alterations === */
+#menu-bar .menu-wrapper li a, #menu-bar .menu-wrapper .menu li a { padding: 0 1.25em !important; }
+
+/* === Training Resources Listing === */
+.view-training-resources { position: relative; overflow:  hidden; }
+.view-training-resources .view-filters { position: absolute; z-index: 100; }
+.view-training-resources .view-filters .views-exposed-widget { background: none repeat scroll 0 0 #f2f2f2; border: 1px solid #CCCCCC; margin: 0.5em 1em 0 0; padding: 0; }
+
+
+/* Content Below the Filters */
+.view-training-resources .view-content { 
+  position: relative; z-index: 20; margin-top: 180px; min-height: 600px; }
+.view-training-resources .view-empty { 
+  position: relative; z-index: 20; margin-top: 180px; min-height: 600px; }
+
+
+/* === Q & A Styles === */
+/* Question */
+.node-question .submitted { font-style: italic; color: #ccc; }
+.node-question .node-content .field-name-body { margin-bottom: 20px; padding: 20px; }
+.node-question .node-content .field-name-body .field-item { font-size: 1.5em; line-height: 1.5; }
+
+/* Answer */
+.node-question .view-answers-to-a-question { background: #eee; }
+.node-question .view-answers-to-a-question .views-row { border-bottom: 1px solid #ddd; border-top: 1px solid #fff; border-right: 0; border-left: 0; padding: 10px 20px; }
+.node-question .view-answers-to-a-question .views-row.views-row-first { border-top: 0; }
+.node-question .view-answers-to-a-question .views-row.views-row-last  { border-bottom: 0; }
+
+/* Voting Block */
+.node-question .view-answers-to-a-question .views-row .rate-widget { background: #91BDDF; color: #FFFFFF; float: left; margin-right: 20px; min-height: 100px; width: 100px; }
+.node-question .view-answers-to-a-question .views-row .rate-widget .rate-number-up-down-rating { width: 80px; font-size: 2em; float: left; padding: 10px; }
+.node-question .view-answers-to-a-question .views-row .rate-widget .rate-button { border: 1px solid #80ACCE; display: block; float: left; height: 16px; margin-top: 4px; overflow: hidden; padding: 10px; text-indent: 100px; width: 28%; }
+.node-question .view-answers-to-a-question .views-row .rate-widget .rate-button:hover { border: 1px solid #fff; }
+.node-question .view-answers-to-a-question .views-row .rate-widget .rate-button.rate-number-up-down-btn-up { background: url("/sites/all/modules/rate/templates/number-up-down/add.png") no-repeat scroll center center transparent; }
+.node-question .view-answers-to-a-question .views-row .rate-widget .rate-button.rate-number-up-down-btn-down { background: url("/sites/all/modules/rate/templates/number-up-down/minus.png") no-repeat scroll center center transparent; }
+
+.node-question .view-answers-to-a-question .views-row .rate-widget .rate-info { color: #fff; text-align: center; }
+
+/* Answer content */
+.node-question .view-answers-to-a-question .views-row .views-field-title { }
+.node-question .view-answers-to-a-question .views-row .views-field-name { }
+.node-question .view-answers-to-a-question .views-row .views-field-body { }
+
+
+/* === User Submitted Content === */
+/* Listing at user/%/your-content */
+.view-user-submitted-content .view-content .views-row { border: 0; }
+.view-user-submitted-content .view-content .views-row-last { margin-bottom: 20px; }
+.view-user-submitted-content .view-content .views-row a { font-size: 18px; display: block; border-bottom: 1px solid #efefef; margin-bottom: 2px; padding-bottom: 2px; }
+
+/* Top Menu Hacks (Already moved via jQuery) */
+.region-top-menu .block-inner { margin: 0; }
+.region-top-menu .block a { height: 2.5em;  line-height: 2.5em;  margin: 0 6px; font-size: 17.5px; }
+.region-top-menu .block .menu-item-404 a { margin-left: 0; }
+
+/* Breadcrumbs */
+.logged-in.page-user #breadcrumb a { font-size: 1em; }
+
+
+/* === Taxonomy Term Pages === */
+.page-taxonomy .taxonomy-term .field-name-field-associated-images { overflow: hidden; margin-bottom: 20px; }
+.page-taxonomy .taxonomy-term .field-name-field-associated-images figure { max-width: 220px; float: left; margin-right: 10px; }
+
+.page-taxonomy .node-booking-resource { margin-bottom: 1em; }
+
+.page-taxonomy .node-booking-resource .node-header,
+.page-taxonomy .node-booking-resource .links .node-readmore { display: none; }
+
+.button.booking { display: block; margin: -10px auto 10px; text-align: center; width: 300px; }
+
+
+.page-mobile-technology-training-labs .view-mobile-technology-training-labs .view-content .views-row { border: 0; }
+.page-mobile-technology-training-labs .view-mobile-technology-training-labs .view-content .views-row .views-field-name a { font-size: 18px; }
+
+.page-mobile-technology-training-labs .view-mobile-technology-training-labs .view-footer h2 { border-top: 1px solid #eee; padding-top: 20px; }
+
+
+
+/* 
+ *
+ * thenumber mods from here
+ *
+ */
+
+
+/*
+ * edit the select2 to support the highlighing making it look like optgroups
+ * (not being used anymore)
+.select2-result-label {
+  font-weight: bold;
+}
+.dlor-nested-label {
+  font-weight: normal;
+  padding-left: 15px !important;
+}
+*/
+
+/*theme tooling*/
+.views-exposed-widgets label {
+  display: inline-block;
+}
+#edit-keys-wrapper .views-widget {
+  display: inline-block;
+}
+hr.header {
+  height: 1px;
+  border: none;
+  background-color: #bcbcbc;
+}
+.views-exposed-form .filter-group {
+  width: 100%;
+}
+.views-exposed-form .filter-group .views-exposed-widget {
+  width: 28%;
+  margin: 10px 10px;
+  display: inline-block;
+  float: none;
+  background: none;
+  border: none;
+}
+.select2-container {
+  width: 100%;
+}
+.view-filters {
+  left:0;
+  right:0;
+}
+.hidden-label {
+  display: none !important;
+}
+.view-training-resources .view-filters .views-submit-button, #edit-keys-wrapper {
+border: 0; }
+.view-training-resources form {
+  margin: 10px;
+}
+
+#edit-keys-wrapper { width: 100%; }
+#edit-keys-wrapper #edit-keys { width: 400px; }
+#edit-field-resource-type-value-wrapper { width: 30%; }
+#edit-field-source-library-region-tid-wrapper { width: 30% }
+#edit-field-training-topic-value-wrapper { width: 25%; }
+#edit-field-source-library-value-wrapper .bef-select-as-checkboxes-fieldset 
+.fieldset-wrapper .fieldset-description { display: none; }
+
+.views-exposed-form .views-exposed-widgets .views-submit-button {
+  right: 0;
+  width: auto;
+}
+.views-exposed-form .views-exposed-widgets .views-submit-button input {
+  float: right;
+  margin: 0;
+  height: 34px;
+}
+.shrunken-exposed-form {
+  width: 20% !important;
+}
+#login-menu-super {
+  float:right;
+  font-size: 12px;
+}
+
+.block-search .block-inner {
+  margin: 0;
+  width: 300px;
+  height: 30px;
+}
+.block-search form input[type=search] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 25px;
+  line-height:1;
+  width: 270px !important;
+  margin-right: 0 !important;
+  padding-right: 0;
+  border-top-right-radius:0;
+  border-bottom-right-radius: 0;
+  border-right: 0 !important;
+}
+.block-search form input[type=submit] {
+  width: 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-item-search-block-form {
+  width: 270px;
+  box-sizing: border-box;
+}
+
+/* layout for frontpage threeup */
+#dlor-frontpage-threeup {
+}
+.dlor-frontpage-threeup-item {
+  font-size: 13px;
+  width: 33%;
+  height: 250px;
+  padding: 10px;
+  float: left;
+  border-right: 1px solid #bcbcbc;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.dlor-frontpage-threeup-item .block-inner {
+  margin-left: 0;
+  margin-right: 0;
+}
+.dlor-frontpage-threeup-item:last-child {
+  border: 0;
+}
+.page-frontpage .feed-icon {
+  display: none;
+}
+.page-frontpage .view-footer .feed-icon {
+  display: block;
+  padding: 0;
+  padding-top: 10px;
+}
+.page-frontpage .view-footer .feed-icon img {
+  padding: 0;
+}
+#block-block-2 {
+  width: 50%;
+  float: left;
+}
+#block-block-5 {
+  width: 50%;
+  float: left;
+}
+footer {
+  border-top: 1px solid #bcbcbc;
+  font-size: 13px;
+  padding: 0 !important;
+}
+#dlor-frontpage-header h1 {
+  font-size: 3em;
+  color: #000;
+}
+#dlor-frontpage-header h3 {
+  font-size: 1.5em;
+  color: #777;
+}
+#dlor-frontpage-header {
+  margin-bottom: 20px;
+}
+.page-frontpage .columns-inner {
+  padding-bottom: 100px;
+}
+.region-header .block-search {
+  padding: 10px;
+}
+.page-search #tasks {
+  display: none;
+}
+.page-search .views-exposed-form {
+  padding: 10px;
+}
