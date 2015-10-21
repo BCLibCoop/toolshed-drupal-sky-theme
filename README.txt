@@ -1,4 +1,6 @@
 
+DLOR fork of Drupal Sky theme used on librarytoolshed.ca
+
 -- SUMMARY --
 
 Sky is a minimal, re-colorable, multi-column theme which uses HTML5
