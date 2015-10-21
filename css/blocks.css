@@ -81,3 +81,12 @@
 .ie6-7 #search-form input.form-submit:focus {
   background-position: center -25px;
 }
+
+.four-4x25.clearfix .region .block.block-block.no-title div.block-inner.clearfix {
+  padding-bottom: 0px !important;
+}
+
+.block-inner div.brought-to-you {
+  margin-left: 6em;
+  margin-top: 4.5em;
+}

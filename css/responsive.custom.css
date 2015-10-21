@@ -5,3 +5,9 @@
     left: auto;
   }
 }
+
+@media only screen and (max-width:1024px) {
+  .block-region-menu-bar div.toolshed-logo {
+    margin-left: 1em;
+  }
+}
