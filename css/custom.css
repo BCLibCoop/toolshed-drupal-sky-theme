@@ -269,3 +269,16 @@ footer {
 .page-search .views-exposed-form {
   padding: 10px;
 }
+
+/*All Programs view select2*/
+
+input#edit-submit-all-programs {
+ /* margin: 1.6em 0px 0px 0px*/
+}
+
+div.form-item-field-length-of-program-session2-value {
+  width: 11em !important;
+}
+
+
+
