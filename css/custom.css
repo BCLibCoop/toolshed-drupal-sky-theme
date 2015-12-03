@@ -276,7 +276,7 @@ input#edit-submit-all-programs {
  /* margin: 1.6em 0px 0px 0px*/
 }
 
-div.form-item-field-length-of-program-session2-value {
+div.form-item-field-length-of-program-session2-value, div.form-item-field-primary-audience-value {
   width: 11em !important;
 }
 
