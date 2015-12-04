@@ -164,7 +164,7 @@ border: 0; }
   height: 34px;
 }
 .shrunken-exposed-form {
-  width: 20% !important;
+  width: 25% !important;
 }
 #login-menu-super {
   float:right;
@@ -275,8 +275,29 @@ input#edit-submit-all-programs {
  /* margin: 1.6em 0px 0px 0px*/
 }
 
-div.form-item-field-length-of-program-session2-value, div.form-item-field-primary-audience-value {
-  width: 11em !important;
+div.form-item-field-length-of-program-session2-value, div.form-item-field-primary-audience-value, div.form-item-field-content-type-selector {
+  width: 11.5em !important;
+}
+
+/* === Combined search ===
+Make room for content type filter */
+
+.view-search.view-id-search div#edit-keys-wrapper {
+	width: 52%;
+}
+
+.view-search.view-id-search div#edit-keys-wrapper > .views-widget {
+	width: 365px;
+}
+
+/*override select2 here*/
+.views-widget .select2-container {
+	vertical-align: baseline;
+}
+
+.view-search.view-id-search .views-exposed-widget.views-submit-button {
+	display: block;
+	position: absolute;
 }
 
 /* === Program Info standalone === */
