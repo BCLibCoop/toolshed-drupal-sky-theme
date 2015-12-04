@@ -19,7 +19,6 @@
 .view-training-resources .view-filters { position: absolute; z-index: 100; }
 .view-training-resources .view-filters .views-exposed-widget { background: none repeat scroll 0 0 #f2f2f2; border: 1px solid #CCCCCC; margin: 0.5em 1em 0 0; padding: 0; }
 
-
 /* Content Below the Filters */
 .view-training-resources .view-content { 
   position: relative; z-index: 20; margin-top: 180px; min-height: 600px; }
@@ -280,5 +279,14 @@ div.form-item-field-length-of-program-session2-value, div.form-item-field-primar
   width: 11em !important;
 }
 
+/* === Program Info standalone === */
+.node.node-program-info {
+        background-color: #fdf9dd;
+        border: 1px solid #f5e05c;
+}
 
-
+/* === Training Resource standalone === */
+.node.node-training-resource {
+	background-color: #f0f2fe;
+	border: 1px solid #5c71f5;
+}

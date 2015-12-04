@@ -15,6 +15,10 @@
         </h1>
       <?php endif; ?>
 
+      <?php if ($node->type): ?>
+	<h3 class="node-type"><?php print node_type_get_name($node->type); ?></h3>
+      <?php endif; ?>
+
       <?php if ($display_submitted): ?>
         <div class="submitted"><?php print $submitted; ?></div>
       <?php endif; ?>
