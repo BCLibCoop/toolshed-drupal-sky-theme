@@ -319,9 +319,26 @@ section.field.field-name-field-source-library-region.field-type-taxonomy-term-re
 	margin: 1em 2em;
 }
 
+.page-node #page-title {
+	display: none;
+}
+
 /* Override articles.css header */
 article.node-program-info .node-header, article.node-training-resource .node-header{
 	margin-left: 2em;
+}
+
+.node-type {
+	display: inline-block;
+	color: #666;
+}
+
+.node-type:after {
+	content: " \2014";
+}
+
+.node-header .submitted {
+	display: inline-block;
 }
 
 .node-program-info.article .field, .node-training-resource.article .field.view-mode-full {

@@ -16,11 +16,23 @@
       <?php endif; ?>
 
       <?php if ($node->type): ?>
-	<h3 class="node-type"><?php print node_type_get_name($node->type); ?></h3>
+	<section class="node-type"><?php print node_type_get_name($node->type); ?></section>
       <?php endif; ?>
 
       <?php if ($display_submitted): ?>
         <div class="submitted"><?php print $submitted; ?></div>
+      <?php endif; ?>
+
+      <!--Node title inside content bounds -->
+      <?php $types = array(
+		'training_resource',
+		'program_info');
+      ?>
+
+      <?php if ($title && in_array($node->type, $types)): ?>
+        <h1 id="node-title"<?php print $attributes; ?>>
+        <?php print $title; ?>
+        </h1>
       <?php endif; ?>
 
     </header>
