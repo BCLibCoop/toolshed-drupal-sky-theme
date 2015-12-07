@@ -140,6 +140,7 @@ console.log("READY");
   $('#edit-tid-bc-libraries').select2({placeholder: "BC Libraries"});
   $('#edit-tid-sk-libraries').select2({placeholder: "SK Libraries"});
   $('#edit-tid-mb-libraries').select2({placeholder: "MB Libraries"});
+  $('#edit-field-content-type-selector').select2({placeholder: "Content Type"});
   
   //All Programs browse
   $('#edit-field-primary-audience-value').select2({ placeholder: "Primary Audience" });
