@@ -311,3 +311,27 @@ Make room for content type filter */
 	background-color: #f0f2fe;
 	border: 1px solid #5c71f5;
 }
+
+/* Both standalones */
+section.field.field-name-field-source-library-region.field-type-taxonomy-term-reference {
+	display: block;
+	border-left: none;
+	margin: 1em 2em;
+}
+
+/* Override articles.css header */
+article.node-program-info .node-header, article.node-training-resource .node-header{
+	margin-left: 2em;
+}
+
+.node-program-info.article .field, .node-training-resource.article .field.view-mode-full {
+	padding: 0px;
+	margin: 1em 2em;
+	vertical-align: top;
+}
+
+section.field.field-name-field-primary-audience, section.field.field-name-field-secondary-audience,
+section.field.field-name-field-number-of-sessions, section.field.field-name-field-session-frequency,
+section.field.field-name-field-length-of-program-session2, section.field.field-name-field-program-photos, section.field.field-name-field-program-promotional-materi, section.field.field-name-field-copies-of-program-publicit {
+	display: inline-block;
+}
