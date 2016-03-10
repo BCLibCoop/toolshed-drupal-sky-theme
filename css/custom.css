@@ -275,7 +275,10 @@ input#edit-submit-all-programs {
  /* margin: 1.6em 0px 0px 0px*/
 }
 
-div.form-item-field-length-of-program-session2-value, div.form-item-field-primary-audience-value, div.form-item-field-content-type-selector {
+/*div.form-item-field-length-of-program-session2-value, div.form-item-field-primary-audience-value, div.form-item-field-content-type-selector, div.form-item-field-conference-year-value, div.form-item-field-conference-name-tid {
+  width: 11.5em !important;
+}*/
+div.form-type-select {
   width: 11.5em !important;
 }
 

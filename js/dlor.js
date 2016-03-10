@@ -141,6 +141,10 @@ console.log("READY");
   $('#edit-tid-sk-libraries').select2({placeholder: "SK Libraries"});
   $('#edit-tid-mb-libraries').select2({placeholder: "MB Libraries"});
   $('#edit-field-content-type-selector').select2({placeholder: "Content Type"});
+
+  //Conference presentation browse
+  $('#edit-field-conference-name-tid').select2({placeholder: "Conference Name"});
+  $('#edit-field-conference-year-value').select2({placeholder: "Year"});
   
   //All Programs browse
   $('#edit-field-primary-audience-value').select2({ placeholder: "Primary Audience" });
