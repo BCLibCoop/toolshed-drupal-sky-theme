@@ -26,7 +26,8 @@
       <!--Node title inside content bounds -->
       <?php $types = array(
 		'training_resource',
-		'program_info');
+		'program_info',
+		'conference_presentation');
       ?>
 
       <?php if ($title && in_array($node->type, $types)): ?>

@@ -305,7 +305,7 @@ Make room for content type filter */
 
 /* === Program Info standalone === */
 .node.node-program-info {
-        background-color: #fdf9dd;
+        background-color: #fefcf0;
         border: 1px solid #f5e05c;
 }
 
@@ -313,6 +313,12 @@ Make room for content type filter */
 .node.node-training-resource {
 	background-color: #f0f2fe;
 	border: 1px solid #5c71f5;
+}
+
+/* === Conference Presentation standalone === */
+.node.node-conference-presentation {
+	background-color: #f9fef0;
+	border: 1px solid #d3f995;
 }
 
 /* Both standalones */
@@ -327,7 +333,9 @@ section.field.field-name-field-source-library-region.field-type-taxonomy-term-re
 }
 
 /* Override articles.css header */
-article.node-program-info .node-header, article.node-training-resource .node-header{
+article.node-program-info .node-header, 
+article.node-training-resource .node-header,
+article.node-conference-presentation .node-header {
 	margin-left: 2em;
 }
 
@@ -344,14 +352,25 @@ article.node-program-info .node-header, article.node-training-resource .node-hea
 	display: inline-block;
 }
 
-.node-program-info.article .field, .node-training-resource.article .field.view-mode-full {
+.node-program-info.article .field, 
+.node-training-resource.article .field.view-mode-full,
+.node-conference-presentation .field {
 	padding: 0px;
-	margin: 1em 2em;
+	margin: 0.5em 2em;
 	vertical-align: top;
 }
 
-section.field.field-name-field-primary-audience, section.field.field-name-field-secondary-audience,
-section.field.field-name-field-number-of-sessions, section.field.field-name-field-session-frequency,
-section.field.field-name-field-length-of-program-session2, section.field.field-name-field-program-photos, section.field.field-name-field-program-promotional-materi, section.field.field-name-field-copies-of-program-publicit {
+section.field.field-name-field-primary-audience,
+section.field.field-name-field-secondary-audience,
+section.field.field-name-field-number-of-sessions,
+section.field.field-name-field-session-frequency,
+section.field.field-name-field-length-of-program-session2,
+section.field.field-name-field-program-photos,
+section.field.field-name-field-program-promotional-materi,
+section.field.field-name-field-copies-of-program-publicit,
+section.field.field-name-field-authot,
+section.field.field-name-field-author-e-mail,
+section.field.field-name-field-conference-name,
+section.field.field-name-field-conference-year {
 	display: inline-block;
 }

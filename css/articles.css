@@ -74,7 +74,7 @@ article .tags .field-label,
   text-transform: lowercase;
 }
 .node ul.links li {
-  margin: 0;
+  margin: 1em 2em;
   padding: 0 .75em 0 0;
 }
 .node ul.links li a {
