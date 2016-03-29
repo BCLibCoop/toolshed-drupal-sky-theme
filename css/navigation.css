@@ -44,7 +44,7 @@ ul.menu ul {
   padding: 0;
 }
 .region-top-menu ul.menu li {
-  float: left;
+ /* float: left;*/
   list-style: none;
   list-style-image: none;
   padding: 0;
@@ -95,6 +95,13 @@ ul.menu ul {
   display: none;
 }
 
+.block-block.menu-bar-wrapper div#account-menu-link {
+ float: right;
+ font-size: 16px;
+ margin-bottom: 10px;
+ z-index: 4;
+}
+
 /* Superfish Skins */
 ul.sf-menu {
   margin-bottom: 0 !important;
@@ -121,6 +128,32 @@ ul.sf-menu {
 }
 .block .menu li.content {
   padding: 0; /* extra class can equal a standard class */
+}
+
+/* Superfish main menu */
+.sf-main-menu.sf-menu li {
+  float: unset;
+}
+
+.sf-main-menu li.sf-parent-children-0 {
+  width: 12%;
+}
+
+.sf-main-menu li.sf-parent-children-0 ul {
+  z-index: 1;
+  opacity: unset;
+  text-align: left;
+}
+
+.sf-main-menu li.sf-parent-children-0 ul li.sf-no-children {
+  background-color: #FFF
+}
+
+.sf-sub-indicator {
+ background: url('../../../libraries/superfish/images/arrows-777777.png') no-repeat -10px -100px;
+ display: inline-block;
+ position: unset;
+ margin-left: 7px;
 }
 
 /* AT7 builds brumbcrumb trails as an ordered list. */
