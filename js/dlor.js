@@ -123,8 +123,11 @@ console.log("READY");
       $('#edit-field-video-link').show();
     }
   }
-  addResourceTypeSelected($('#edit-field-resource-type-und').val());
-
+  
+  //When this field doesn't exist, don't hide re-used file metadata fields because nothing can reveal them
+  if ($('#edit-field-resource-type-und').length) {
+  	addResourceTypeSelected($('#edit-field-resource-type-und').val());
+  }
   $('#edit-field-resource-type-und').change(function(e) {
     console.log(e);
     console.log($(this).val());  
