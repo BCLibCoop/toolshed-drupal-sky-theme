@@ -146,7 +146,7 @@ console.log("READY");
   $('#edit-field-content-type-selector').select2({placeholder: "Content Type"});
 
   //Conference presentation browse
-  $('#edit-field-conference-name-tid').select2({placeholder: "Conference Name"});
+  $('#edit-field-conference-name-value').select2({placeholder: "Conference Name"});
   $('#edit-field-conference-year-value').select2({placeholder: "Year"});
   
   //All Programs browse
