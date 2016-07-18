@@ -149,7 +149,7 @@ border: 0; }
 #edit-keys-wrapper { width: 100%; }
 #edit-keys-wrapper #edit-keys { width: 400px; }
 #edit-field-resource-type-value-wrapper { width: 30%; }
-#edit-field-source-library-region-tid-wrapper { width: 20% }
+#edit-field-source-library-region-wrapper { width: 20% }
 #edit-field-training-topic-value-wrapper { width: 25%; }
 #edit-field-source-library-value-wrapper .bef-select-as-checkboxes-fieldset 
 .fieldset-wrapper .fieldset-description { display: none; }
@@ -280,7 +280,7 @@ input#edit-submit-all-programs {
   width: 11.5em !important;
 }*/
 div.form-type-select {
-  width: 12em !important;
+  /* width: 12em !important; */
 }
 
 /* === Combined search ===
@@ -309,14 +309,19 @@ Make room for content type filter */
 	margin-right: 1em;
 }
 
-.section-search .view-search-solr .views-widget-filter-node_field_source_library_region {
-	/* margin-left: 4em; */
+.section-search .view-search-solr .views-widget-filter-node_field_source_library_region_parents_all {
+	margin-left: -1em;
+	margin-right: 1em;
 	margin-top: 1.4em;
 }
-.section-search .view-search-solr .views-widget-filter-node_field_source_library_region input.select2-input {
+.section-search .view-search-solr .views-widget-filter-node_field_source_library_region_parents_all input.select2-input {
 	height: 14px;
 }
 .section-search .view-search-solr .select2-container ul.select2-choices {
+	width: 75%;
+}
+
+.section-search .view-search-solr .form-item-field-source-library-region .select2-container ul.select2-choices {
 	width: 105%;
 }
 
@@ -328,7 +333,7 @@ Make room for content type filter */
 }
 
 .section-search .view-search-solr .views-widget-filter-secondary .form-item.form-type-select {
-	display: inline-block;
+	display: table-row;
 	margin-left: 1em;
 }
 

@@ -136,7 +136,7 @@ console.log("READY");
   });
 
   //$('#edit-field-source-library-region-tid option:first').html("Select a source library...");
-  $('#edit-field-source-library-region-tid').select2({ placeholder: "Source Library Region", allowClear: true });
+  $('#edit-field-source-library-region').select2({ placeholder: "Source Library Region", allowClear: true });
   $('#edit-field-training-topic-value').select2({ placeholder: "Training Topic" });
   $('#edit-field-resource-type-value').select2({ placeholder: "Resource Type" });
   $('#edit-tid-ab-libraries').select2({placeholder: "Alberta Libraries"});
