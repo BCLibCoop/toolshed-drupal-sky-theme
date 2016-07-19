@@ -318,7 +318,8 @@ Make room for content type filter */
 	height: 14px;
 }
 .section-search .view-search-solr .select2-container ul.select2-choices {
-	width: 75%;
+	/*width: 100%;*/
+	max-width: 31.5em;
 }
 
 .section-search .view-search-solr .form-item-field-source-library-region .select2-container ul.select2-choices {
