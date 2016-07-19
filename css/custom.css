@@ -304,36 +304,36 @@ Make room for content type filter */
 	position: absolute;
 }
 
-.section-search .view-search-solr .views-widget-filter-search_api_views_fulltext {
+.view-search-solr .views-widget-filter-search_api_views_fulltext {
 	margin-left: 1em;
 	margin-right: 1em;
 }
 
-.section-search .view-search-solr .views-widget-filter-node_field_source_library_region_parents_all {
+.view-search-solr .views-widget-filter-node_field_source_library_region_parents_all {
 	margin-left: -1em;
 	margin-right: 1em;
 	margin-top: 1.4em;
 }
-.section-search .view-search-solr .views-widget-filter-node_field_source_library_region_parents_all input.select2-input {
+.view-search-solr .views-widget-filter-node_field_source_library_region_parents_all input.select2-input {
 	height: 14px;
 }
-.section-search .view-search-solr .select2-container ul.select2-choices {
+.view-search-solr .select2-container ul.select2-choices {
 	/*width: 100%;*/
 	max-width: 31.5em;
 }
 
-.section-search .view-search-solr .form-item-field-source-library-region .select2-container ul.select2-choices {
+.view-search-solr .form-item-field-source-library-region .select2-container ul.select2-choices {
 	width: 105%;
 }
 
-.section-search .view-search-solr .bef-secondary-options ul.select2-choices input {
+.view-search-solr .bef-secondary-options ul.select2-choices input {
 	width: 90%;
 }
-.section-search .view-search-solr .views-widget-filter-secondary {
+.view-search-solr .views-widget-filter-secondary {
 	width: 66%;
 }
 
-.section-search .view-search-solr .views-widget-filter-secondary .form-item.form-type-select {
+.view-search-solr .views-widget-filter-secondary .form-item.form-type-select {
 	display: table-row;
 	margin-left: 1em;
 }
