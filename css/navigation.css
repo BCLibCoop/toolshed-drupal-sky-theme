@@ -44,7 +44,7 @@ ul.menu ul {
   padding: 0;
 }
 .region-top-menu ul.menu li {
-  float: left;
+ /* float: left;*/
   list-style: none;
   list-style-image: none;
   padding: 0;
@@ -60,10 +60,24 @@ ul.menu ul {
 .menu-toggle {
   display: none;
 }
+.menu-wrapper {
+  width: auto;
+  /*float: right;*/
+  display: block;
+  overflow: visible;
+}
+#menu-bar.nav {
+  float: right;
+  margin-top: 0.75em;
+}
+#menu-bar > .block {
+  margin-bottom: -1em;
+  min-height: 1.75em;
+}
 #menu-bar,
 #menu-bar .menu-wrapper {
-  clear: both;
-  margin: 0;
+  /*float: right;*/
+  display: inline-block;
 }
 #menu-bar .menu-wrapper ul.menu {
   margin: 0;
@@ -75,25 +89,89 @@ ul.menu ul {
   list-style: none;
   margin-left: 0;
   margin-right: 2px;
+  float: none;
 }
+#menu-bar .login-link a,
 #menu-bar .menu-wrapper li a,
 #menu-bar .menu-wrapper .menu li a {
   display: block;
-  line-height: 2.5em;
-  padding: 0 2em;
   white-space: nowrap;
+  color: #1d467d;
+  margin: 0 1.2em;
+  line-height: 1.5em;
+}
+#menu-bar .menu-wrapper li .menuparent {
+  color: #1d467d;
+  margin: 0 1em;
+  cursor: pointer;
+  line-height: 1.5em;
+}
+#menu-bar .login-link a:hover,
+#menu-bar .menu-wrapper li a.sf-depth-1:hover,
+#menu-bar .menu-wrapper .menu li a.sf-depth-1:hover,
+#menu-bar .menu-wrapper li .sf-with-ul:hover {
+  border-bottom: 0.15em solid #ffc807;
+  transition: none;
 }
 #menu-bar .menu-wrapper ul.menu li {
-  padding: 0;
-}
-#menu-bar .block {
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
 }
 #menu-bar .block-menu ul.menu ul {
   display: none;
 }
+#menu-bar .search-bar {
+  margin-left: 1em;
+}
+.search-block-form input.form-text {
+  border-radius: 3em;
+  border: 0;
+  padding: 0.5em 5em 0.8em 3em;
+  width: 16.75em;
+  font-size: 1em;
+}
+.search-block-form:before {
+  font-family: 'Fontawesome';
+  content: '\f002';
+  font-size: 1em;
+  color: #424242;
+  margin-right: -2em;
+  position: relative;
+  z-index: 1;
+}
+#menu-bar input.form-submit {
+  background: #1d467d;
+  color: #ffffff;
+  border: 0;
+  border-radius: 2em;
+  box-shadow: 0;
+  font-size: 0.8em;
+  margin: 0em 0 0 -5.2em;
+  padding: 0.5em 0.75em;
+}
+.block-block.menu-bar-wrapper div#account-menu-link {
+ float: right;
+ font-size: 16px;
+ margin-bottom: 10px;
+ z-index: 4;
+}
+#menu-bar .login-link,
+#menu-bar #account-menu-link {
+  min-height: 1.7em;
+  margin-bottom: -0.5em;
+}
+#menu-bar .login-link a {
+  text-align: left;
+  font-style: italic;
+}
+#menu-bar .login-link a:before {
+  font-family: 'Fontawesome';
+  content: '\f090';
+  font-size: 1em;
+  position: relative;
+  z-index: 1;
+  margin-right: 0.6em;
+  font-style: normal;
+}
+#menu-bar .contextual-links-wrapper { display: none; }
 
 /* Superfish Skins */
 ul.sf-menu {
@@ -123,6 +201,42 @@ ul.sf-menu {
   padding: 0; /* extra class can equal a standard class */
 }
 
+/* Superfish main menu */
+.sf-main-menu li.sf-parent-children-0 ul {
+  z-index: 1;
+  text-align: left;
+  margin-top: 2.6em;
+  padding: 1em 0;
+  width: auto!important;
+  font-size: .875em;
+}
+.front .sf-main-menu li.sf-parent-children-0 ul {
+  margin-top: 0.25em;
+}
+#menu-bar .menu-wrapper .sf-main-menu li ul li a {
+  padding: 0.75em 1.5em;
+  margin: 0;
+}
+#menu-bar .sf-main-menu li ul li a:hover {
+  background: #7dcab2;
+}
+
+
+.sf-main-menu li.sf-parent-children-0 ul li.sf-no-children {
+  background-color: #bee4d8;
+}
+
+.sf-sub-indicator {
+  display: none;
+}
+.sf-with-ul:after {
+  font-family: 'FontAwesome';
+  content: '\f0d7';
+  display: inline-block;
+  font-size: 0.95em;
+  color: #1d467d;
+  margin-left: 0.5em;
+}
 /* AT7 builds brumbcrumb trails as an ordered list. */
 #breadcrumb ol {
   margin: 0;

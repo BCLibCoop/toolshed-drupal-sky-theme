@@ -43,7 +43,6 @@ function sky_process_html(&$vars) {
     _color_html_alter($vars);
   }
 }
-
 /**
  * Override or insert variables into the page template.
  */
@@ -110,8 +109,24 @@ function sky_process_region(&$vars) {
 }
 
 /*
- * BEGIN THENUMBER MODIFICATIONS 
+ * BEGIN THENUMBER MODIFICATIONS
  */
 drupal_add_js(drupal_get_path('theme','sky').'/js/dlor.js');
 drupal_add_js(drupal_get_path('theme','sky').'/js/select2.js');
 drupal_add_css(drupal_get_path('theme','sky').'/css/select2.css');
+
+function sky_file_formatter_generic($variables) {
+  $header = array(t('Attachment'), t('Size'), t('Date'));
+  $rows = array();
+  foreach ($variables['items'] as $delta => $item) {
+      $XXCUSTOMfilesize = format_size($item['filesize']);
+    $rows[] = array(
+      theme('file_link', array('file' => (object) $item)),
+      //format_size($item['filesize']);
+      format_size(round($XXCUSTOMfilesize)), // removes decimals;see PHP round for options
+      //format_date($item['timestamp'], $type = 'custom', 'D, n/j/Y g:ia T'), includes users timezonne (EST, PST etc)
+      format_date($item['timestamp'], $type = 'custom', 'D, n/j/Y g:ia'),
+      );
+  }
+  return empty($rows) ? '' : theme('table', array('header' => $header, 'rows' => $rows));
+}

@@ -12,31 +12,43 @@
 .at-panel .rounded-corner,
 .block-panels-mini > .block-title,
 div.messages {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 /* Panel pages need negative margin equal to the gutter width applied to #content,
   this is taken care of in theme settings as per above for normal gutters */
+.container {
+}
 #content .panel-display,
 #content .panel-flexible {
   margin-left: -20px;
   margin-right: -20px;
 }
 .columns-inner {
-  padding-top: 20px;
+  max-width: 51.5em;
+  margin: 0 auto;
 }
 #page > header {
   clear: both;
-  padding: 20px 0 0;
+  padding: 1.25em 3.1em 1.25em 3.1em;
+  background-image: url(images/grid-back.png);
 }
+.front #page > header {
+  padding: 1.87em 3.1em 2.6em 3.1em;
+}
+.region-header {
+  text-align: center;
+}
+.front-logo {
+  clear: both;
+  display: block;
+}
+
+.front #branding { display: none; }
 #branding {
   float: left;
-  margin: 0 0 0px;
-  width: 40%;
 }
-#logo {
-  padding: 0 20px;
-  float: left;
+#logo img {
+  max-width: 3.75em;
+  height: auto;
 }
 #page > header > hgroup {
   line-height: 1.2;
@@ -68,13 +80,10 @@ h2#site-slogan {
   font-size: 1.077em;
   font-weight: 400;
 }
-.region-header {
-  float: right;
-  max-width: 60%;
-  clear: none;
-}
 h1#page-title {
   margin-top: 0;
+  color: #424242;
+  margin-bottom: 1.4em;
 }
 .in-maintenance h1#page-title {
   padding: 10px;
@@ -98,8 +107,48 @@ a.feed-icon {
 }
 
 /* Footer - the main page footer only */
-#page > footer {
-  padding: 20px 0;
+footer {
+  padding: 3em 3em 2em 3em;
+  font-size: 0.75em;
+}
+footer .block {
+  margin: 0;
+}
+.brought-to {
+  text-align: center;
+}
+.brought-to h2.block-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.16em;
+}
+.brought-to img {
+  vertical-align: middle;
+  margin: 0 2%;
+}
+.creativec {
+  max-width: 40%;
+  float: left;
+}
+.creativec p {
+  margin-top: 1.5em;
+}
+.copyright {
+  max-width: 100%;
+  float: right;
+}
+footer .block-masquerade {
+  clear: both;
+  text-align: center;
+  width: 100%;
+  background: #424242;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+.block-masquerade h2.block-title {
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5em 0;
 }
 
 /* Feed icons */

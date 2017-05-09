@@ -131,7 +131,7 @@ hr.header {
   border: none;
 }
 .select2-container {
-  width: 100%;
+  width: 105%;
 }
 .view-filters {
   left:0;
@@ -300,7 +300,7 @@ Make room for content type filter */
 
 .view-search.view-id-search .views-exposed-widget.views-submit-button {
 	display: block;
-	position: absolute;
+/*	position: absolute;*/
 }
 
 /* === Program Info standalone === */
@@ -369,8 +369,12 @@ section.field.field-name-field-program-photos,
 section.field.field-name-field-program-promotional-materi,
 section.field.field-name-field-copies-of-program-publicit,
 section.field.field-name-field-authot,
-section.field.field-name-field-author-e-mail,
 section.field.field-name-field-conference-name,
 section.field.field-name-field-conference-year {
 	display: inline-block;
+}
+
+/* Piwik reports */
+#piwik-reports-reports .widgetIframe iframe {
+	height: 100%;
 }

@@ -1,4 +1,4 @@
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix node-file"<?php print $attributes; ?>>
 
   <?php print $unpublished; ?>
 
@@ -7,7 +7,20 @@
   <?php if(!empty($user_picture) || $title || (!empty($submitted) && $display_submitted)): ?>
     <header<?php print $header_attributes; ?>>
 
-      <?php print $user_picture; ?>
+      <!--Node title inside content bounds -->
+      <?php $types = array(
+    'training_resource',
+    'program_info',
+    'conference_presentation');
+      ?>
+
+      <?php if ($title && in_array($node->type, $types)): ?>
+        <h1 id="node-title" class="node-title-a" <?php print $attributes; ?>>
+        <?php print $title; ?>
+        </h1>
+      <?php endif; ?>
+
+      <!-- <?php print $user_picture; ?> -->
 
       <?php if ($title && !$page): ?>
         <h1<?php print $title_attributes; ?>>
@@ -15,27 +28,23 @@
         </h1>
       <?php endif; ?>
 
-      <?php if ($node->type): ?>
-	<section class="node-type"><?php print node_type_get_name($node->type); ?></section>
-      <?php endif; ?>
+      <!-- <?php if ($node->type): ?>
 
+	<section class="node-type"><?php print node_type_get_name($node->type); ?></section>
+      <?php endif; ?> -->
+      <div class="author">
+      <?php if ($content['field_authot']): ?>
+        <span>By:</span> <?php print render($content['field_authot']); ?>
+      <?php endif; ?>
+      <?php if ($content['field_authot'] && $content['field_source_library_region']): ?><span>,</span><?php endif; ?>
+      <?php if ($content['field_source_library_region']): ?>
+          <?php
+          print render(field_view_field('node', $node, 'field_source_library_region', array('label'=>'hidden'))); 
+          ?>
+      <?php endif; ?></div>
       <?php if ($display_submitted): ?>
         <div class="submitted"><?php print $submitted; ?></div>
       <?php endif; ?>
-
-      <!--Node title inside content bounds -->
-      <?php $types = array(
-		'training_resource',
-		'program_info',
-		'conference_presentation');
-      ?>
-
-      <?php if ($title && in_array($node->type, $types)): ?>
-        <h1 id="node-title"<?php print $attributes; ?>>
-        <?php print $title; ?>
-        </h1>
-      <?php endif; ?>
-
     </header>
   <?php endif; ?>
 
@@ -49,10 +58,10 @@
   ?>
   </div>
 
-  <?php if ($links = render($content['links'])): ?>
+  <!-- <?php if ($links = render($content['links'])): ?>
     <nav<?php print $links_attributes; ?>><?php print $links; ?></nav>
-  <?php endif; ?>
+  <?php endif; ?> -->
 
-  <?php print render($content['comments']); ?>
+  <?php //print render($content['comments']); ?>
 
 </article>

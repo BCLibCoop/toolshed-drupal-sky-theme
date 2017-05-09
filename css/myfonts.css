@@ -1,0 +1,33 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3352935, 2017-03-01T13:43:06-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed ../fonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: WeissenhofGrotesk-Medium by Indian Type Foundry
+ * URL: http://www.myfonts.com/fonts/indian-type-foundry/weissenhof-grotesk/medium/
+ *
+ * Webfont: WeissenhofGrotesk-Regular by Indian Type Foundry
+ * URL: http://www.myfonts.com/fonts/indian-type-foundry/weissenhof-grotesk/regular/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3352935
+ * Licensed pageviews: 10,000
+ * ../fonts copyright: Copyright 2015 Indian Type Foundry
+ *
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/332967");
+
+
+@font-face {font-family: 'WeissenhofGrotesk-Medium';src: url('../fonts/332967_0_0.eot');src: url('../fonts/332967_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/332967_0_0.woff2') format('woff2'),url('../fonts/332967_0_0.woff') format('woff'),url('../fonts/332967_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'WeissenhofGrotesk-Regular';src: url('../fonts/332967_1_0.eot');src: url('../fonts/332967_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/332967_1_0.woff2') format('woff2'),url('../fonts/332967_1_0.woff') format('woff'),url('../fonts/332967_1_0.ttf') format('truetype');}

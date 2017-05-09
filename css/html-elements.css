@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+  font-family: "WeissenhofGrotesk-Regular", Helvetica, Arial,sans-serif;
   line-height: 1.5; /* Unit-less line-height means line height can scale. */
   min-height: 100%;
   margin: 0;
@@ -21,6 +21,7 @@ body {
 
 /* Sizes match proper font scaling. */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", Trebuchet, sans-serif;
   font-weight: 400;
   line-height: 1em;
   padding: 0;
@@ -98,7 +99,10 @@ q:after {
   content:"";
 }
 
-strong,
+strong {
+  font-family: "WeissenhofGrotesk-Medium", Helvetica, Arial,sans-serif;
+  font-weight: normal;
+}
 dfn,
 caption,
 th {
@@ -192,6 +196,17 @@ dd:last-child {
 dl dl {
   margin-left: 1em;
 }
+.view-header li {
+  list-style: none;
+  margin: 0.25em 0 0.25em 2em;
+}
+.view-aboutview li:before {
+  font-family: 'FontAwesome';
+  content: '\f061';
+  color: #1d467d;
+  font-size: 1em;
+  margin-right: 0.5em
+}
 
 /**
  * Flexible Media and Cross browser improvements
@@ -253,4 +268,18 @@ video {
 /* Prevents modern browsers from displaying 'audio' without controls */
 audio:not([controls]) {
   display: none;
+}
+a:visited.button,
+a.button {
+  border-radius: 0.25em;
+  background: #ffb53e;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: .875em;
+  cursor: pointer;
+}
+a.button:hover {
+  background: #1d467d;
+  color: #ffffff;
 }

@@ -3,39 +3,36 @@
   <?php print render($page['top_menu']); ?>
 
   <header id="header" class="clearfix" role="banner">
+    <!-- start: Branding -->
+    <div id="branding" class="branding-elements clearfix">
 
-    <?php if ($site_logo || $site_name || $site_slogan): ?>
-      <!-- start: Branding -->
-      <div id="branding" class="branding-elements clearfix">
+      <?php if ($site_logo): ?>
+        <div id="logo">
+          <?php print $site_logo; ?>
+        </div>
+      <?php endif; ?>
 
-        <?php if ($site_logo): ?>
-          <div id="logo">
-            <?php print $site_logo; ?>
-          </div>
-        <?php endif; ?>
+      <?php if ($site_name || $site_slogan): ?>
+        <!-- start: Site name and Slogan hgroup -->
+        <hgroup id="name-and-slogan"<?php print $hgroup_attributes; ?>>
 
-        <?php if ($site_name || $site_slogan): ?>
-          <!-- start: Site name and Slogan hgroup -->
-          <hgroup id="name-and-slogan"<?php print $hgroup_attributes; ?>>
+          <?php if ($site_name): ?>
+            <h1 id="site-name"<?php print $site_name_attributes; ?>><?php print $site_name; ?></h1>
+          <?php endif; ?>
 
-            <?php if ($site_name): ?>
-              <h1 id="site-name"<?php print $site_name_attributes; ?>><?php print $site_name; ?></h1>
-            <?php endif; ?>
+          <?php if ($site_slogan): ?>
+            <h2 id="site-slogan"<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></h2>
+          <?php endif; ?>
 
-            <?php if ($site_slogan): ?>
-              <h2 id="site-slogan"<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></h2>
-            <?php endif; ?>
+        </hgroup><!-- /end #name-and-slogan -->
 
-          </hgroup><!-- /end #name-and-slogan -->
+      <?php endif; ?>
 
-        <?php endif; ?>
-
-      </div><!-- /end #branding -->
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
+    </div><!-- /end #branding -->
     <?php print render($page['menu_bar']); ?>
-
+    <?php print render($page['header']); ?>
+    <?php if ($site_logo || $site_name || $site_slogan): ?>
+    <?php endif; ?>
   </header>
 
   <div id="columns"<?php print $page['menu_bar'] ? 'class="no-menu-bar"' : '' ;?>>
@@ -62,8 +59,6 @@
         </div>
       <?php endif; ?>
 
-      <?php if ($breadcrumb): print $breadcrumb; endif; ?>
-
       <div id="content-column">
         <div class="content-inner">
 
@@ -84,7 +79,7 @@
                 <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links): ?>
                   <div id="tasks">
 
-                    <?php if ($primary_local_tasks): ?>
+                    <?php  if ($primary_local_tasks): ?>
                       <ul class="tabs primary clearfix"><?php print render($primary_local_tasks); ?></ul>
                     <?php endif; ?>
 
@@ -110,7 +105,6 @@
               </div>
             <?php endif; ?>
 
-            <?php print $feed_icons; ?>
 
           </<?php print $tag; ?>>
 
@@ -125,36 +119,9 @@
 
     </div>
   </div>
-
-  <?php if (
-    $page['footer'] ||
-    $page['four_first'] ||
-    $page['four_second'] ||
-    $page['four_third'] ||
-    $page['four_fourth']
-    ): ?>
-    <footer role="contentinfo">
-      <?php if (
-        $page['four_first'] ||
-        $page['four_second'] ||
-        $page['four_third'] ||
-        $page['four_fourth']
-        ): ?>
-        <!-- Four column Gpanel -->
-        <div class="at-panel gpanel panel-display four-4x25 clearfix">
-          <div class="panel-row row-1 clearfix">
-            <?php print render($page['four_first']); ?>
-            <?php print render($page['four_second']); ?>
-          </div>
-          <div class="panel-row row-2 clearfix">
-            <?php print render($page['four_third']); ?>
-            <?php print render($page['four_fourth']); ?>
-          </div>
-        </div>
-      <?php endif; ?>
-      <?php if ($page['footer']): print render($page['footer']); endif; ?>
-    </footer>
-  <?php endif; ?>
+  <footer role="contentinfo">
+    <?php if ($page['footer']): print render($page['footer']); endif; ?>
+  </footer>
 
 </div><!-- //End #page, .container -->
 

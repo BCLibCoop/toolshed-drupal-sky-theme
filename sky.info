@@ -11,19 +11,21 @@
 
 
 ;----------// CSS
-
+  stylesheets[all][] = css/font-awesome.css
+  stylesheets[all][] = css/myfonts.css
   stylesheets[all][] = css/html-elements.css
   stylesheets[all][] = css/forms.css
   stylesheets[all][] = css/tables.css
   stylesheets[all][] = css/page.css
   stylesheets[all][] = css/articles.css
+  stylesheets[all][] = css/frontpage.css
   stylesheets[all][] = css/comments.css
   stylesheets[all][] = css/fields.css
   stylesheets[all][] = css/blocks.css
   stylesheets[all][] = css/navigation.css
-  stylesheets[all][] = color/colors.css
+  stylesheets[all][] = css/resources.css
+  stylesheets[all][] = css/colors.css
   stylesheets[all][] = css/sky.settings.style.css
-  stylesheets[all][] = css/custom.css
   stylesheets[print][] = css/print.css
 
   ; Internet Explorer Stylesheets
@@ -67,8 +69,8 @@
   regions[sidebar_first]     = Sidebar first
   regions[sidebar_second]    = Sidebar second
   regions[top_menu]          = Top menu bar
-  regions[header]            = Header
   regions[menu_bar]          = Menu Bar
+  regions[header]            = Header
   regions[help]              = Help
   regions[highlighted]       = Highlighted
   regions[content]           = Main content
@@ -81,7 +83,7 @@
   ; Hidden regions (required by Drupal core)
   regions[page_top]          = Page top
   regions[page_bottom]       = Page bottom
-  
+
 
 
 ;----------// Gpanel Regions
@@ -97,17 +99,17 @@
   ; Appearance settings page for Pixture Reloaded.
 
   ; 3x33 Gpanel
-  regions[three_33_top]    = AT Three column 3x33 - top
-  regions[three_33_first]  = AT Three column 3x33 - left
-  regions[three_33_second] = AT Three column 3x33 - center
-  regions[three_33_third]  = AT Three column 3x33 - right
-  regions[three_33_bottom] = AT Three column 3x33 - bottom
+  ; regions[three_33_top]    = AT Three column 3x33 - top
+  ; regions[three_33_first]  = AT Three column 3x33 - left
+  ; regions[three_33_second] = AT Three column 3x33 - center
+  ; regions[three_33_third]  = AT Three column 3x33 - right
+  ; regions[three_33_bottom] = AT Three column 3x33 - bottom
 
   ; 4x25 Gpanel
-  regions[four_first]  = AT Four column 4x25 - 1
-  regions[four_second] = AT Four column 4x25 - 2
-  regions[four_third]  = AT Four column 4x25 - 3
-  regions[four_fourth] = AT Four column 4x25 - 4
+  ; regions[four_first]  = AT Four column 4x25 - 1
+  ; regions[four_second] = AT Four column 4x25 - 2
+  ; regions[four_third]  = AT Four column 4x25 - 3
+  ; regions[four_fourth] = AT Four column 4x25 - 4
 
 
 
@@ -448,4 +450,3 @@ version = "7.x-3.0-rc1"
 core = "7.x"
 project = "sky"
 datestamp = "1343717266"
-

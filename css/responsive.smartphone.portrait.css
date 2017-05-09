@@ -1,5 +1,4 @@
 body {
-  padding: 0 5px;
 }
 
 body.admin-menu {
@@ -20,7 +19,15 @@ body.admin-menu {
   max-width: 100%;
   overflow: hidden;
 }
-
+#page > header {
+  padding: 1em 0 0 0!important;
+}
+.front #page > header img {
+  height: auto!important;
+}
+#content {
+  padding: 0 5px;
+}
 .region-header .block {
   clear: both;
   float: none;
@@ -49,12 +56,16 @@ h2#site-slogan {
 .js #menu-bar nav {
   display: none;
 }
-
+.sf-accordion-toggle {
+  margin: 0 1.2em;
+}
 .menu-toggle {
   display: block;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   font-size: 1.2em;
-  margin: 0 10px 0 0;
+  margin: 0;
   padding: 0;
   text-transform: lowercase;
 }
@@ -62,6 +73,7 @@ h2#site-slogan {
 .menu-toggle a {
   padding: 7px 10px 10px;
   display: block;
+  border-radius: 0!important;
 }
 
 #menu-bar .menu-wrapper {
@@ -82,17 +94,32 @@ h2#site-slogan {
   display: block;
   float: none;
   margin-right: 0;
+  text-align: left;
 }
 
 #menu-bar .menu-wrapper ul.menu li {
   margin: 0;
   padding: 0;
 }
-
+#menu-bar.nav {
+  float: none;
+  display: block;
+  background: #ffffff;
+  margin: 0;
+}
+#menu-bar .login-link a {
+  margin: 1em 1.2em;
+}
+ul.sf-menu.sf-accordion ul {
+  float: none;
+}
 ul.sf-menu {
   width: 100%;
 }
 
 .sf-menu.sf-style-default ul {
   width: 100% !important;
+}
+.search-bar {
+  display: none!important;
 }

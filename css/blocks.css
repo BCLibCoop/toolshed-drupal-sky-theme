@@ -1,7 +1,4 @@
 /* Blocks. */
-.block {
-  margin-bottom: 20px;
-}
 .block-title {
   font-size: 1.385em;
   line-height: 1.2;
@@ -9,17 +6,6 @@
 }
 .mini-panel-title {
   margin: 0 10px;
-}
-.region-header .block {
-  clear: none;
-  float: right;
-  margin: 0;
-}
-#page > footer .block {
-  margin: 0;
-}
-#page > footer .block .block-inner {
-  padding: 20px 0;
 }
 /* Block lists */
 .block ul li {
@@ -47,10 +33,10 @@
 .region-header .block-search .inner {
   padding: 0;
 }
-#search-form input#edit-keys,
+/*#search-form input#edit-keys,
 .block-search input,
 #block-search-form .form-item-search-block-form input {
-  float: left; /* LTR */
+  float: left; /* LTR
   font-size: 1em;
   margin-right: 5px;
   width: 62%;
@@ -67,7 +53,7 @@
   padding: 0;
   text-indent: -9999px;
   width: 34px;
-  text-transform: uppercase; /* IE7 hack to trigger text indent reliably */
+  text-transform: uppercase; /* IE7 hack to trigger text indent reliably 
 }
 .block-search form input.form-submit:hover,
 .block-search form input.form-submit:focus,
@@ -80,7 +66,7 @@
 .ie6-7 #search-form input.form-submit:hover,
 .ie6-7 #search-form input.form-submit:focus {
   background-position: center -25px;
-}
+}*/
 
 .four-4x25.clearfix .region .block.block-block.no-title div.block-inner.clearfix {
   padding-bottom: 0px !important;
