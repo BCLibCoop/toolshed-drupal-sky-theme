@@ -1,31 +1,38 @@
 /* Articles (nodes) */
-article {
-  margin-bottom: 3em;
+.views-row article {
+  margin-bottom:  0.75em;
+  background: #e8ecf2;
+  padding: 1em;
 }
+.node-type-toolshed-blog-post h1#page-title,
 h1.node-title {
   margin: 0 0 0.18em;
+  font-size: 1.5em;
+  font-family: "Roboto", Trebuchet, sans-serif;
 }
 article > header {
- border-bottom: solid 1px #e6e4de;
  position: relative;
 }
+.node-type,
 article .submitted {
   color: #666;
   font-size: 0.923em;
   padding: 0 0 0.6em 0;
   position: relative;
+  display: inline-block;
+  font-style: italic;
 }
 article .node-content {
   padding: 1em 0;
 }
-article .links {
-  font-size: 0.923em;
-  text-transform: lowercase;
-}
 article .links a,
-article .links a:visited {
+article .links a:visited,
+article .links a:active, {
   display: inline-block;
   padding: 0.3em 0.8em;
+  background: #1d467d;
+  color: #ffffff;
+  border-radius: 0.5em;
 }
 .node header.with-picture {
   height: 3.5em;
@@ -71,14 +78,16 @@ article .tags .field-label,
 }
 .node ul.links {
   margin: 0;
-  text-transform: lowercase;
 }
 .node ul.links li {
-  margin: 1em 2em;
   padding: 0 .75em 0 0;
 }
 .node ul.links li a {
   padding: 0.5em 1em;
   white-space: nowrap;
-  font-size: 0.857em;
+  font-size: 0.88em;
+  border-radius: 0.5em;
+}
+.comment_forbidden {
+  display: block;
 }
